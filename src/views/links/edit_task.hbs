@@ -1,0 +1,41 @@
+<div class="col-md-8 mx-auto">
+
+  <div class="card text-dark bg-light" style="max-width: 100rem;">
+    <h2 class="card-title">Solucion del Caso</h2>
+    <div class="card-body">
+      <form action="/links/edit_task/{{tasks.id}}" method="POST">
+
+        <h4>Cierre de Caso <span class="label label-default">Clínico</span></h4>
+        <div class="form-group">
+          <select
+            class="form-control"
+            name="respuesta_medico"
+            placeholder="Laboratorio"
+           {{task.respuesta_medico}}
+          >
+            <optionvalue="Formulación generada con contacto con usuario">Formulación generada con contacto con usuario</option>
+            <option value="Formulación generada sin contacto con usuario">Formulación generada sin contacto con usuario</option>
+            <option value="No es posible generar reformulación, medicamento sin alternativo">No es posible generar reformulación, medicamento sin alternativo</option>
+            <option value="Formulación generada por especialista, con contacto con usuario">Formulación generada por especialista, con contacto con usuario</option>
+            <option value="Formulación generada por especialista, sin contacto con usuario">Formulación generada por especialista, sin contacto con usuario</option>
+            <option value="otro">otro</option>
+
+           
+
+
+
+
+
+          </select>
+        </div>
+
+        <hr class="my-4" />
+        <div class="form-group">
+          <button class="btn btn-success btn-block">
+            Guardar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
